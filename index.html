@@ -4,127 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madhav's Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="decor.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div><a href="Contact">Contact</a></div>
-            <div><a href="Projects">Projects</a></div>
-            <div><a href="Skills">Skills</a></div>
-            <div><a href="About">About</a></div>
-        </nav>
-        <h2>Madhav's Portfolio</h2>
-    </header>
-    <section class="about">
-        <img src="Media/developer.png" alt="">
-        <h2>About Me!</h2>
-        <p>
-            Hello Friends! My name is Madhav Mishra, I am 19 years old. I have done my schooling from City Montessori
-            School which is situated in Lucknow, Uttar Pradesh, India and I am pursuing my degree of Bachelor Of
-            Technology in Computer Science and Engineering from Amity University situated in Lucknow. I aspire to become
-            the fantastic software developer. My insipration was technology changed through time. I mean changing of
-            user interface through the years from Windows 3.1 to Windows 11 we have come a long way same goes for
-            Android and iOS mobile operating systems. When I was a toddler I used to see my father and uncle work on
-            computer which made me fascinated. Recently, I watched The Social Network directed by David Fincher and The
-            Social Dilemma which opened a new door for me and it gave me an reality check how hard I have to work to
-            reach my goal! My hobbies are watching movies, listening music and read some books. Currently, I am reading
-            Shoe Dog written by Phil Knight.
-        </p>
-    </section>
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="box">
-            <div class="vertical">
-                <div class="title"><img src="Media/videoeditor.png" alt="No Internet" class="sksym">Video Editing</div>
-                <div class="description">During Covid-19, I have learnt video editing in October 2020. I have used
-                    Shotcut which is an open source program definitely recommended for beginners, VSDC Video Editor it
-                    is somehow good I didn't like it that much and Clipchamp it is also easy to use and it's very
-                    flexible and worth it. Recently, I have learnt Adobe Premiere Pro.</div>
-            </div>
-            <div class="vertical">
-                <div class="title"><img src="Media/subtitlewriter.png" alt="No Internet" class="sksym">Subtitle Writer
-                </div>
-                <div class="description">Few months ago, I have discovered this new skill which was amazing and tough at
-                    same time. I have wrote subtitles for so many videos and this task of writing subtitles is time
-                    taking.</div>
-            </div>
-            <div class="vertical">
-                <div class="title"><img src="Media/pngwing.com.png" alt="No Internet" class="sksym">HTML</div>
-                <div class="description">I have started Web Development with first language HTML which is the backbone
-                    of every website. It's not a major skill but it's a start. I had started learning it in 2022.</div>
-            </div>
-            <div class="vertical">
-                <div class="title"><img src="Media/pngwing.com (1).png" alt="No Internet" class="sksym">CSS</div>
-                <div class="description">After I had completed HTML, I learnt CSS which is used to decorate website as
-                    if I didn't decorate this website will anyone wanna visit it? It was easy to understand and I
-                    finished it in 5 days.</div>
-            </div>
-    </section>
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="box">
-            <div class="vertical">
-                <div class="title">Tribute To Bill Gates</div>
-                <div class="description">It was the first project that I made it with HTML and CSS, Bill Gates is my
-                    inspiration and a wonderful person.</div>
-                <a href="Media/Tribute To Bill Gates.zip" download="">
-                    <button>Download</button>
-                </a>
-            </div>
-            <div class="vertical">
-                <div class="title">Score Keeper</div>
-                <div class="description">I had made it with the help of a video and it was a tough one. It took time to
-                    reach at
-                    this level.</div>
-                <a href="Media/Score Keeper.zip" download="">
-                    <button>Download</button>
-                </a>
-            </div>
-            <div class="vertical">
-                <div class="title">Landing Page</div>
-                <div class="description">I had done it for the Codsoft internship program.</div>
-            </div>
-            <a href="Media/Landing Page.zip" download="">
-                <button>Download</button>
-            </a>
-        </div>
-    </section>
-    <section class="resume">
-        <h2>Resume</h2>
-        If you want to know more about my achievements check out my resume! <br>
-        <a href="Media/My Resume.docx" download="">
-            <button>Download</button>
-        </a>
-    </section>
-    <section class="contact">
-        <h2>Contact</h2>
-        <p></p>
-        <p class="title">Phone Number:</p>
-        <p class="description"> +91-9151735808</p> <br>
-        <p class="title">Email Address:</p>
-        <p class="description"> madhavmishra083@gmail.com</p> <br>
-    </section>
-    <footer>
-        <div>All Rights Reserved &#169; (2023) <br>
-            Follow me on
-            <div class="social"><img src="Media/facebook.png" alt="No Internet"><a
-                    href="https://www.facebook.com">Facebook</a></div>
-            <div class="social"><img src="Media/twitter.png" alt="No Internet"><a
-                    href="https://www.twitter.com">Twitter</a></div>
-            <div class="social"><img src="Media/linkedin.png" alt="No Internet"><a
-                    href="https://www.linkedin.com">LinkedIn</a></div>
-            <div class="social"><img src="Media/github.png" alt="No Internet"><a
-                    href="https://www.github.com">Github</a></div>
-            <div class="social"><img src="Media/instagram.png" alt="No Internet"><a
-                    href="https://www.instagram.com">Instagram</a></div>
-            <div class="social"><img src="Media/pinterest.png" alt="No Internet"><a
-                    href="https://www.pinterest.com">Pinterest</a></div>
-        </div>
-    </footer>
+    <table class="calculator">
+        <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input type="button" value="/" onclick="display('/')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input type="button" value="-" onclick="display('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input type="button" value="+" onclick="display('+')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
+            <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
 </body>
-
 
 </html>
